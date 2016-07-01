@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -14,22 +13,19 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import teamtoko.n4got.R;
 
-public class CadOutrosActivity extends AppCompatActivity {
-
+public class CartaoActivity extends AppCompatActivity {
     private Context context = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cad_outros);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_cartao);
         ButterKnife.bind(this);
-
 
     }
 
-    @OnClick(R.id.imgAdd)
-    public void bateuCabecanoteclado(View v){
+    @OnClick(R.id.outrosAdicionar)
+    public void outroadicionar(View v){
         Log.e("Botao","Clicado");
         final AlertDialog.Builder buil = new AlertDialog.Builder(context);
         buil.setTitle("Adicionar");
@@ -51,6 +47,7 @@ public class CadOutrosActivity extends AppCompatActivity {
         AlertDialog dialog = buil.create();
 
         dialog.show();
-    }
 
+
+    }
 }

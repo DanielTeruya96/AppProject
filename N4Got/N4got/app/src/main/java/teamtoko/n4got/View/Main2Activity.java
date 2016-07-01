@@ -17,6 +17,7 @@ import teamtoko.n4got.R;
 
 public class Main2Activity extends AppCompatActivity {
     public Context ve = this;
+    private AlertDialog dial;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +32,8 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                 final AlertDialog.Builder buil = new AlertDialog.Builder(ve);
+
                 buil.setTitle("Escolha uma opção");
                 LayoutInflater lay = getLayoutInflater();
                 View itens = lay.inflate(R.layout.alert_items,null);
@@ -43,6 +44,7 @@ public class Main2Activity extends AppCompatActivity {
                         t.show();
                         Log.e("botal","Clicou no rede");
                         startActivity(new Intent(ve,CadRedActivity.class));
+                        dial.dismiss();
 
 
 
@@ -55,6 +57,7 @@ public class Main2Activity extends AppCompatActivity {
                         t.show();
                         Log.e("botal","Clicou no Banco");
                         startActivity(new Intent(ve,CadBancoActivity.class));
+                        dial.dismiss();
                     }
                 });
 
@@ -65,12 +68,13 @@ public class Main2Activity extends AppCompatActivity {
                         t.show();
                         Log.e("botal","Clicou no outros");
                         startActivity(new Intent(ve,CadOutrosActivity.class));
+                        dial.dismiss();
 
                     }
                 });
 
                 buil.setView(itens);
-                AlertDialog dial = buil.create();
+                dial = buil.create();
 
                 dial.show();
 

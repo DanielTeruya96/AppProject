@@ -14,4 +14,6 @@
     <string name="adicionar">Adicionar</string>
     <string name="title_activity_cad_outros">CadOutrosActivity</string>
     <string name="outros">Outros</string>
+    <string name="nome_do_atributo">Nome do Atributo:</string>
+    <string name="atributo">Atributo:</string>
 </resources>

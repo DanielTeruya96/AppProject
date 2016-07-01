@@ -34,7 +34,8 @@
         <activity
             android:name=".View.CadOutrosActivity"
             android:label="@string/title_activity_cad_outros"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.CartaoActivity"></activity>
     </application>
 
 </manifest>

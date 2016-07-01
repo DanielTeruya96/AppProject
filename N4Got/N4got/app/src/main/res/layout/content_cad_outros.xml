@@ -24,7 +24,7 @@
     <ImageView
         android:layout_width="@dimen/padraoImg"
         android:layout_height="@dimen/padraoImg"
-        android:id="@+id/imageView4"
+        android:id="@+id/imgAdd"
         android:layout_below="@+id/textView9"
         android:layout_centerHorizontal="true"
         android:background="@android:drawable/ic_menu_add" />
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listView3"
-        android:layout_below="@+id/imageView4"
+        android:layout_below="@+id/imgAdd"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/button4" />
 </RelativeLayout>
