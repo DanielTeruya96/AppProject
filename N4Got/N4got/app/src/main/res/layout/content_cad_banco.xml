@@ -16,24 +16,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Banco"
-        android:id="@+id/textView6"
+        android:id="@+id/txtBanco"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/TamanhoLetraGrande" />
 
     <ImageView
+        android:src="@drawable/bb"
         android:layout_width="@dimen/padraoImg"
         android:layout_height="@dimen/padraoImg"
-        android:id="@+id/imageView3"
-        android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/bb" />
+        android:id="@+id/imgBanco"
+        android:layout_below="@+id/txtBanco"
+        android:layout_centerHorizontal="true" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/spinBanco"
-        android:layout_below="@+id/imageView3"
+        android:layout_below="@+id/imgBanco"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -99,12 +99,5 @@
         android:layout_below="@+id/editText2"
         android:layout_toRightOf="@+id/button2"
         android:layout_toEndOf="@+id/button2" />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView2"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

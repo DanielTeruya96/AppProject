@@ -6,4 +6,5 @@
     <dimen name="TamanhoLetraGrande">50dp</dimen>
     <dimen name="Letramedia">20dp</dimen>
     <dimen name="padraoImg">100dp</dimen>
+    <dimen name="padrao_img_mini">50dp</dimen>
 </resources>

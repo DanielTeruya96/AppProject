@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/RedeSocial"
-        android:id="@+id/textView3"
+        android:id="@+id/txtTopo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/TamanhoLetraGrande" />
@@ -25,16 +25,16 @@
     <ImageView
         android:layout_width="@dimen/padraoImg"
         android:layout_height="@dimen/padraoImg"
-        android:id="@+id/imageView2"
-        android:layout_below="@+id/textView3"
+        android:id="@+id/imgRede"
+        android:layout_below="@+id/txtTopo"
         android:src="@drawable/fb"
         android:layout_centerHorizontal="true" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_below="@+id/imageView2"
+        android:id="@+id/spinred"
+        android:layout_below="@+id/imgRede"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp" />
 
