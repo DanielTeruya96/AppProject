@@ -1,6 +1,0 @@
--art da logo
-- deseho de fundo da tela 
--Imagens do botão rede,banco e outros (para  ter um botão personalizado)
-
-
-
