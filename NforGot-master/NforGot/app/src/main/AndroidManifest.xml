@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CadastreActivity" />
-        <activity android:name=".ChaveActivity"></activity>
+        <activity android:name=".ChaveActivity" />
+        <activity android:name=".Objeto"></activity>
     </application>
 
 </manifest>

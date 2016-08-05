@@ -1,15 +1,16 @@
 package ufms.cpcx.artcomp.nforgot;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class CadastreActivity extends AppCompatActivity {
+public class CadastreActivity extends Activity {
     private EditText nome;
     private EditText email;
     private EditText chave;
@@ -21,7 +22,9 @@ public class CadastreActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_cadastre);
+
         nome = (EditText) findViewById(R.id.editNome);
         email = (EditText) findViewById(R.id.edtEmail);
         chave = (EditText) findViewById(R.id.edtChave);

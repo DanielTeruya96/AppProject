@@ -7,13 +7,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ufms.cpcx.artcomp.nforgot.CadastreActivity">
+    tools:context="ufms.cpcx.artcomp.nforgot.CadastreActivity"
+    android:background="@drawable/artc">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastre-se"
+        android:text="Cadastro"
+        android:textSize="30dp"
         android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -22,19 +27,42 @@
         android:layout_height="wrap_content"
         android:text="Nome: "
         android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/editNome"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="33dp" />
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/editNome"
-        android:layout_below="@+id/textView2"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/edtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edtEmail"
+        android:layout_above="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -43,32 +71,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="E-mail"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/editNome"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/edtEmail"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/editNome"
-        android:layout_alignEnd="@+id/editNome" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Chave"
         android:id="@+id/textView4"
-        android:layout_below="@+id/edtEmail"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textColor="#ffffff"
+        android:layout_above="@+id/edtChave"
+        android:layout_alignLeft="@+id/edtChave"
+        android:layout_alignStart="@+id/edtChave"
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -76,19 +85,27 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/edtChave"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/edtEmail"
-        android:layout_alignEnd="@+id/edtEmail" />
+        android:layout_above="@+id/btnCadastro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cadastrar"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
         android:id="@+id/btnCadastro"
-        android:layout_below="@+id/edtChave"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp" />
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/artbu"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="2dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/linha"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
 
 </RelativeLayout>
